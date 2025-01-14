@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerBot Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-item {
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to BurgerBot!</h1>
+    <p>Choose your favorite items:</p>
+    <div class="menu-item">
+        <h3>Classic Burger</h3>
+        <p>$5.99</p>
+        <button onclick="order('Classic Burger')">Order Now</button>
+    </div>
+    <div class="menu-item">
+        <h3>Cheese Burger</h3>
+        <p>$6.99</p>
+        <button onclick="order('Cheese Burger')">Order Now</button>
+    </div>
+    <div class="menu-item">
+        <h3>Veggie Burger</h3>
+        <p>$4.99</p>
+        <button onclick="order('Veggie Burger')">Order Now</button>
+    </div>
+    <script>
+        function order(item) {
+            alert(`You ordered: ${item}`);
+        }
+    </script>
+</body>
+</html>
